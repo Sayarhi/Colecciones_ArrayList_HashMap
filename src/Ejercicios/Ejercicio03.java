@@ -18,11 +18,16 @@ public class Ejercicio03 {
 
         //creo el bucle para la impresión de los números
         for(int i =0; i < 10; i++){
-            System.out.println("Número: " + (i+1));
+            System.out.println("Número " + (i+1) + ": ");
             numero= sc.nextInt();
             listaNumero.add(numero);
         }
+        
+        Collections.sort(listaNumero); //ordena la lista de forma ascendente para Integers
 
-
+        System.out.println("\nListado de los números de forma ascendente: ");
+        for(int n : listaNumero){
+            System.out.println(n);
+        }
     }
 }
